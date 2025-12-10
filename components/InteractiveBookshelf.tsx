@@ -80,9 +80,10 @@ const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ imageSrc, b
       )}
 
       {/* Control Bar */}
-      <div className="w-full flex justify-between items-center mb-4 bg-gray-800 p-4 rounded-lg shadow-lg border border-gray-700">
+      <div className="w-full flex flex-col items-start mb-6 bg-gray-800 p-5 rounded-xl shadow-lg border border-gray-700">
+        <h2 className="text-2xl font-bold text-white mb-2">Programming</h2>
         <div className="flex items-center space-x-2">
-            <Info className="text-blue-400" size={20} />
+            <Info className="text-blue-400" size={18} />
             <span className="text-sm text-gray-300 font-medium">
                 Hover to preview, click a spine to view details.
             </span>
