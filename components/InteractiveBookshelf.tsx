@@ -44,7 +44,8 @@ const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ imageSrc, b
 
   const getPurchaseLink = (book: BookSpine) => {
     if (book.purchaseUrl) return book.purchaseUrl;
-    return `https://www.amazon.com/s?k=${encodeURIComponent((book.title || "") + " " + (book.author || ""))}`;
+    // Generic Google Search to avoid favoring specific vendors
+    return `https://www.google.com/search?q=${encodeURIComponent("buy " + (book.title || "") + " " + (book.author || ""))}`;
   };
 
   const getCoverImage = (book: BookSpine) => {
@@ -219,7 +220,7 @@ const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ imageSrc, b
                             className="flex items-center justify-center gap-3 w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-6 rounded-xl transition-all duration-200 transform hover:-translate-y-1 shadow-lg hover:shadow-blue-500/25 group"
                         >
                             <ShoppingCart size={20} />
-                            <span>Buy on Amazon</span>
+                            <span>Find Online</span>
                             <ExternalLink size={16} className="opacity-50 group-hover:opacity-100 transition-opacity" />
                         </a>
                         <p className="text-center text-gray-500 text-xs mt-3">
