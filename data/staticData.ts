@@ -300,7 +300,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     title: "Tell Me Why",
     author: "Arkady Leokum",
     colorDescription: "Blue spine with white text 'TELL ME WHY'.",
-    polygon: [{x:0,y:440}, {x:64,y:440}, {x:64,y:910}, {x:0,y:910}]
+    polygon: [{x:0,y:195}, {x:58,y:195}, {x:58,y:905}, {x:0,y:905}]
   },
   {
     id: "what-if",
@@ -308,14 +308,14 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Randall Munroe",
     colorDescription: "White spine with red text 'what if?'.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780544272996-L.jpg",
-    polygon: [{x:64,y:440}, {x:108,y:442}, {x:108,y:910}, {x:64,y:910}]
+    polygon: [{x:58,y:210}, {x:102,y:210}, {x:102,y:905}, {x:58,y:905}]
   },
   {
     id: "social-work",
     title: "Social Work in a Changing Scotland",
     author: "Viv Cree",
     colorDescription: "Black spine.",
-    polygon: [{x:108,y:442}, {x:142,y:442}, {x:142,y:910}, {x:108,y:910}]
+    polygon: [{x:102,y:210}, {x:138,y:210}, {x:138,y:905}, {x:102,y:905}]
   },
   {
     id: "thousand-brains",
@@ -323,7 +323,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Jeff Hawkins",
     colorDescription: "White spine with black text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781541675810-L.jpg",
-    polygon: [{x:142,y:442}, {x:192,y:443}, {x:192,y:910}, {x:142,y:910}]
+    polygon: [{x:138,y:210}, {x:182,y:210}, {x:182,y:905}, {x:138,y:905}]
   },
   {
     id: "brilliant-maps",
@@ -331,7 +331,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Ian Wright",
     colorDescription: "Cyan/Light blue spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781615196258-L.jpg",
-    polygon: [{x:192,y:443}, {x:218,y:444}, {x:218,y:910}, {x:192,y:910}]
+    polygon: [{x:182,y:210}, {x:212,y:210}, {x:212,y:905}, {x:182,y:905}]
   },
   {
     id: "stone-pony",
@@ -339,7 +339,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Nick Corasaniti",
     colorDescription: "Black/Dark grey spine with white horse icon.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780063026360-L.jpg",
-    polygon: [{x:218,y:444}, {x:256,y:445}, {x:256,y:910}, {x:218,y:910}]
+    polygon: [{x:212,y:210}, {x:252,y:210}, {x:252,y:905}, {x:212,y:905}]
   },
   {
     id: "super-thinking",
@@ -347,7 +347,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Gabriel Weinberg",
     colorDescription: "Blue and Yellow spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780525533580-L.jpg",
-    polygon: [{x:256,y:445}, {x:296,y:446}, {x:296,y:910}, {x:256,y:910}]
+    polygon: [{x:252,y:225}, {x:292,y:225}, {x:292,y:905}, {x:252,y:905}]
   },
   {
     id: "5am-club",
@@ -355,7 +355,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Robin Sharma",
     colorDescription: "Orange spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781443456623-L.jpg",
-    polygon: [{x:296,y:446}, {x:332,y:448}, {x:332,y:910}, {x:296,y:910}]
+    polygon: [{x:292,y:225}, {x:328,y:225}, {x:328,y:905}, {x:292,y:905}]
   },
   {
     id: "code",
@@ -363,7 +363,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Charles Petzold",
     colorDescription: "Dark blue spine with word CODE vertically.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780735611313-L.jpg",
-    polygon: [{x:332,y:448}, {x:356,y:449}, {x:356,y:910}, {x:332,y:910}]
+    polygon: [{x:328,y:225}, {x:353,y:225}, {x:353,y:905}, {x:328,y:905}]
   },
   {
     id: "annotated-turing",
@@ -371,7 +371,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Charles Petzold",
     colorDescription: "Black spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780470229057-L.jpg",
-    polygon: [{x:356,y:449}, {x:384,y:450}, {x:384,y:910}, {x:356,y:910}]
+    polygon: [{x:353,y:225}, {x:382,y:225}, {x:382,y:905}, {x:353,y:905}]
   },
   {
     id: "learning-how-to-learn",
@@ -379,7 +379,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Barbara Oakley",
     colorDescription: "White spine with black text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780143132547-L.jpg",
-    polygon: [{x:384,y:450}, {x:408,y:450}, {x:408,y:910}, {x:384,y:910}]
+    polygon: [{x:382,y:225}, {x:405,y:225}, {x:405,y:905}, {x:382,y:905}]
   },
   {
     id: "unix-history",
@@ -387,7 +387,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Brian Kernighan",
     colorDescription: "Blue/Grey spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781695978553-L.jpg",
-    polygon: [{x:408,y:450}, {x:438,y:451}, {x:438,y:910}, {x:408,y:910}]
+    polygon: [{x:405,y:225}, {x:435,y:225}, {x:435,y:905}, {x:405,y:905}]
   },
   {
     id: "dont-make-me-think",
@@ -395,7 +395,14 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Steve Krug",
     colorDescription: "Red spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780321965516-L.jpg",
-    polygon: [{x:438,y:451}, {x:462,y:452}, {x:462,y:910}, {x:438,y:910}]
+    polygon: [{x:435,y:225}, {x:458,y:225}, {x:458,y:905}, {x:435,y:905}]
+  },
+  {
+    id: "standing-on-tables",
+    title: "Standing on Tables",
+    author: "Unknown",
+    colorDescription: "Black spine with white text.",
+    polygon: [{x:458,y:225}, {x:472,y:225}, {x:472,y:905}, {x:458,y:905}]
   },
   {
     id: "world-without-email",
@@ -403,7 +410,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Cal Newport",
     colorDescription: "Black spine with CAL NEWPORT in large letters.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780525536550-L.jpg",
-    polygon: [{x:462,y:452}, {x:522,y:453}, {x:522,y:910}, {x:462,y:910}]
+    polygon: [{x:472,y:260}, {x:530,y:260}, {x:530,y:905}, {x:472,y:905}]
   },
   {
     id: "do-you-talk-funny",
@@ -411,7 +418,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "David Nihill",
     colorDescription: "Black spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781942952275-L.jpg",
-    polygon: [{x:522,y:453}, {x:548,y:453}, {x:548,y:910}, {x:522,y:910}]
+    polygon: [{x:530,y:260}, {x:555,y:260}, {x:555,y:905}, {x:530,y:905}]
   },
   {
     id: "remember-it",
@@ -419,7 +426,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Nelson Dellis",
     colorDescription: "Blue spine with yellow text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781419732560-L.jpg",
-    polygon: [{x:548,y:453}, {x:588,y:453}, {x:588,y:910}, {x:548,y:910}]
+    polygon: [{x:555,y:260}, {x:595,y:260}, {x:595,y:905}, {x:555,y:905}]
   },
   {
     id: "in-our-defense",
@@ -427,7 +434,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Ellen Alderman",
     colorDescription: "Yellow/Beige spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780380717207-L.jpg",
-    polygon: [{x:588,y:453}, {x:636,y:454}, {x:636,y:910}, {x:588,y:910}]
+    polygon: [{x:595,y:270}, {x:640,y:270}, {x:640,y:905}, {x:595,y:905}]
   },
   {
     id: "stroke-of-insight",
@@ -435,7 +442,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Jill Bolte Taylor",
     colorDescription: "White spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780452295571-L.jpg",
-    polygon: [{x:636,y:454}, {x:660,y:454}, {x:660,y:910}, {x:636,y:910}]
+    polygon: [{x:640,y:270}, {x:665,y:270}, {x:665,y:905}, {x:640,y:905}]
   },
   {
     id: "write-one-song",
@@ -443,7 +450,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Jeff Tweedy",
     colorDescription: "White spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780593183526-L.jpg",
-    polygon: [{x:660,y:454}, {x:700,y:454}, {x:700,y:910}, {x:660,y:910}]
+    polygon: [{x:665,y:275}, {x:705,y:275}, {x:705,y:905}, {x:665,y:905}]
   },
   {
     id: "7-half-lessons",
@@ -451,7 +458,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Lisa Feldman Barrett",
     colorDescription: "Dark blue/purple spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780358164069-L.jpg",
-    polygon: [{x:700,y:454}, {x:728,y:455}, {x:728,y:910}, {x:700,y:910}]
+    polygon: [{x:705,y:275}, {x:730,y:275}, {x:730,y:905}, {x:705,y:905}]
   },
   {
     id: "expect-unexpected",
@@ -459,7 +466,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Kit Yates",
     colorDescription: "Red spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781529408461-L.jpg",
-    polygon: [{x:728,y:455}, {x:764,y:455}, {x:764,y:910}, {x:728,y:910}]
+    polygon: [{x:730,y:275}, {x:765,y:275}, {x:765,y:905}, {x:730,y:905}]
   },
   {
     id: "coming-wave",
@@ -467,7 +474,7 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Mustafa Suleyman",
     colorDescription: "Blue spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780804140039-L.jpg",
-    polygon: [{x:764,y:455}, {x:804,y:456}, {x:804,y:910}, {x:764,y:910}]
+    polygon: [{x:765,y:275}, {x:805,y:275}, {x:805,y:905}, {x:765,y:905}]
   },
   {
     id: "elements-style-game",
@@ -475,35 +482,35 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Strunk & White",
     colorDescription: "White thin spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780205309023-L.jpg",
-    polygon: [{x:804,y:456}, {x:820,y:456}, {x:820,y:910}, {x:804,y:910}]
+    polygon: [{x:805,y:275}, {x:820,y:275}, {x:820,y:905}, {x:805,y:905}]
   },
   {
     id: "know-your-rights",
     title: "Know Your Rights!",
     author: "Laura Barcella",
     colorDescription: "Yellow/Green thin spine.",
-    polygon: [{x:820,y:456}, {x:836,y:456}, {x:836,y:910}, {x:820,y:910}]
+    polygon: [{x:820,y:275}, {x:835,y:275}, {x:835,y:905}, {x:820,y:905}]
   },
   {
     id: "the-computer",
     title: "The Computer",
     author: "Unknown",
     colorDescription: "Black/Grey spine.",
-    polygon: [{x:836,y:456}, {x:860,y:456}, {x:860,y:910}, {x:836,y:910}]
+    polygon: [{x:835,y:275}, {x:858,y:275}, {x:858,y:905}, {x:835,y:905}]
   },
   {
     id: "london-bookshops",
     title: "An Opinionated Guide to London Bookshops",
     author: "Sonya Barber",
     colorDescription: "White spine.",
-    polygon: [{x:860,y:456}, {x:884,y:456}, {x:884,y:910}, {x:860,y:910}]
+    polygon: [{x:858,y:275}, {x:882,y:275}, {x:882,y:905}, {x:858,y:905}]
   },
   {
     id: "card-games",
     title: "Card Games",
     author: "Collins",
     colorDescription: "White spine with black text.",
-    polygon: [{x:884,y:456}, {x:920,y:457}, {x:920,y:910}, {x:884,y:910}]
+    polygon: [{x:882,y:275}, {x:915,y:275}, {x:915,y:905}, {x:882,y:905}]
   },
   {
     id: "london-system",
@@ -511,14 +518,14 @@ const GENERAL_BOOKS: BookSpine[] = [
     author: "Oscar de Prado",
     colorDescription: "Yellow spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781906454518-L.jpg",
-    polygon: [{x:920,y:457}, {x:956,y:458}, {x:956,y:910}, {x:920,y:910}]
+    polygon: [{x:915,y:275}, {x:950,y:275}, {x:950,y:905}, {x:915,y:905}]
   },
   {
     id: "50-chess-questions",
     title: "50 Chess Questions",
     author: "Ray Cheng",
     colorDescription: "Red spine.",
-    polygon: [{x:956,y:458}, {x:1000,y:458}, {x:1000,y:910}, {x:956,y:910}]
+    polygon: [{x:950,y:275}, {x:998,y:275}, {x:998,y:905}, {x:950,y:905}]
   }
 ];
 
