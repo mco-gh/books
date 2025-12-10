@@ -56,7 +56,7 @@ const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ title, imag
   };
 
   return (
-    <div className="flex flex-col items-center w-full max-w-5xl mx-auto p-4 animate-fade-in relative mb-12 last:mb-0">
+    <div className="flex flex-col items-center w-full max-w-[57.6rem] mx-auto p-4 animate-fade-in relative mb-12 last:mb-0">
       
       {/* Floating Tooltip (Hover) */}
       {hoveredBook && !selectedBook && (
@@ -156,7 +156,7 @@ const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ title, imag
                     <img 
                         src={getCoverImage(selectedBook)}
                         alt={selectedBook.title}
-                        className="w-48 shadow-2xl rounded-md relative z-10 transform transition-transform hover:scale-105 duration-500"
+                        className="w-[10.8rem] shadow-2xl rounded-md relative z-10 transform transition-transform hover:scale-105 duration-500"
                         style={{ boxShadow: '0 20px 50px -12px rgba(0, 0, 0, 0.7)' }}
                     />
                 </div>
