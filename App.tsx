@@ -110,18 +110,16 @@ const App: React.FC = () => {
                   I built this using the <strong>Gemini 2.5 Flash API</strong> to analyze the image and generate precise vector coordinates for every book spine, allowing for the interactions you see here.
                 </p>
                 <p>
-                  Curious about the code or want to read more about my projects? Check out my blog:
+                  Check out my blog at <a href="https://mco.dev" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 hover:underline">mco.dev</a>.
                 </p>
                 
                 <div className="pt-2">
-                    <a 
-                      href="https://mco.dev" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
+                    <button 
+                      onClick={() => setIsAboutOpen(false)}
                       className="inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-4 rounded-xl transition-all shadow-lg hover:shadow-blue-500/20"
                     >
-                      Visit mco.dev
-                    </a>
+                      Close
+                    </button>
                 </div>
               </div>
            </div>
