@@ -56,7 +56,7 @@ const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ title, imag
   };
 
   return (
-    <div className="flex flex-col items-center w-full max-w-7xl mx-auto p-4 animate-fade-in relative mb-16 last:mb-0">
+    <div className="flex flex-col items-center w-full max-w-7xl mx-auto p-4 animate-fade-in relative mb-12 last:mb-0">
       
       {/* Floating Tooltip (Hover) */}
       {hoveredBook && !selectedBook && (
@@ -91,12 +91,11 @@ const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ title, imag
         </div>
       </div>
 
-      <div className="flex flex-col xl:flex-row gap-8 w-full">
-        
+      <div className="w-full">
         {/* Interactive Image Area */}
         <div 
             ref={containerRef}
-            className="relative flex-grow shadow-2xl rounded-lg overflow-hidden bg-black group w-full xl:w-3/4 border border-gray-800"
+            className="relative w-full shadow-2xl rounded-lg overflow-hidden bg-black group border border-gray-800"
             onMouseMove={handleMouseMove}
         >
             <img 
@@ -131,34 +130,6 @@ const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ title, imag
                 ))}
             </svg>
         </div>
-
-        {/* Info Panel (Sidebar) */}
-        <div className="w-full xl:w-1/4 flex flex-col gap-4 min-h-[300px]">
-            <div className={`
-                bg-gray-800 border border-gray-700 rounded-xl p-8 h-full transition-all duration-300 shadow-xl relative overflow-hidden
-            `}>
-                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 blur-3xl rounded-full pointer-events-none -mr-16 -mt-16"></div>
-                
-                <h3 className="text-blue-400 text-xs uppercase tracking-wider font-bold mb-6 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-blue-500"></span>
-                    Stats
-                </h3>
-                
-                 <div className="flex flex-col gap-6">
-                    <div>
-                        <span className="text-4xl font-mono font-bold text-white">{books.length}</span>
-                        <span className="text-gray-400 text-sm block mt-1">Books Scanned</span>
-                    </div>
-                    
-                    <div className="h-px bg-gray-700 w-full"></div>
-
-                    <div className="text-gray-300 text-sm leading-relaxed">
-                        This virtual bookshelf uses AI-generated coordinates to map every spine. Click any book to see its full details and purchase options.
-                    </div>
-                 </div>
-            </div>
-        </div>
-
       </div>
 
       {/* Book Detail Modal */}
