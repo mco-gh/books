@@ -524,47 +524,40 @@ const GENERAL_BOOKS: BookSpine[] = [
 
 const GAMES_BOOKS: BookSpine[] = [
   {
-    id: "card-games-1",
-    title: "Card Games",
-    author: "Collins",
-    colorDescription: "White spine.",
-    polygon: [{x:0,y:330}, {x:40,y:330}, {x:40,y:850}, {x:0,y:850}]
-  },
-  {
     id: "london-system-1",
     title: "The London System in 12 Practical Lessons",
     author: "Oscar de Prado",
     colorDescription: "Yellow spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781906454518-L.jpg",
-    polygon: [{x:40,y:330}, {x:75,y:330}, {x:75,y:850}, {x:40,y:850}]
+    polygon: [{x:20,y:260}, {x:60,y:260}, {x:60,y:850}, {x:20,y:850}]
   },
   {
     id: "50-mistakes",
     title: "50 Mistakes You Should Know",
     author: "Jesus de la Villa",
     colorDescription: "Red spine.",
-    polygon: [{x:75,y:330}, {x:110,y:330}, {x:110,y:850}, {x:75,y:850}]
+    polygon: [{x:60,y:260}, {x:105,y:260}, {x:105,y:850}, {x:60,y:850}]
   },
   {
     id: "500-chess",
     title: "500 Chess Questions Answered",
     author: "Andrew Soltis",
     colorDescription: "Grey spine.",
-    polygon: [{x:110,y:330}, {x:145,y:330}, {x:145,y:850}, {x:110,y:850}]
+    polygon: [{x:105,y:260}, {x:145,y:260}, {x:145,y:850}, {x:105,y:850}]
   },
   {
     id: "solitaire-chess",
     title: "Solitaire Chess",
     author: "Bruce Pandolfini",
     colorDescription: "Blue spine.",
-    polygon: [{x:145,y:330}, {x:175,y:330}, {x:175,y:850}, {x:145,y:850}]
+    polygon: [{x:145,y:260}, {x:175,y:260}, {x:175,y:850}, {x:145,y:850}]
   },
   {
     id: "small-steps",
     title: "Small Steps to Giant Improvement",
     author: "Sam Shankland",
     colorDescription: "Red spine.",
-    polygon: [{x:175,y:330}, {x:200,y:330}, {x:200,y:850}, {x:175,y:850}]
+    polygon: [{x:175,y:260}, {x:200,y:260}, {x:200,y:850}, {x:175,y:850}]
   },
   {
     id: "100-endgames",
@@ -572,14 +565,14 @@ const GAMES_BOOKS: BookSpine[] = [
     author: "Jesus de la Villa",
     colorDescription: "Teal spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9789056916176-L.jpg",
-    polygon: [{x:200,y:330}, {x:230,y:330}, {x:230,y:850}, {x:200,y:850}]
+    polygon: [{x:200,y:260}, {x:240,y:260}, {x:240,y:850}, {x:200,y:850}]
   },
   {
     id: "bobby-fischer",
     title: "Bobby Fischer's Outrageous Chess Moves",
     author: "Bruce Pandolfini",
     colorDescription: "Cream/White spine.",
-    polygon: [{x:230,y:330}, {x:245,y:330}, {x:245,y:850}, {x:230,y:850}]
+    polygon: [{x:240,y:260}, {x:255,y:260}, {x:255,y:850}, {x:240,y:850}]
   },
   {
     id: "best-lessons",
@@ -587,7 +580,7 @@ const GAMES_BOOKS: BookSpine[] = [
     author: "Sunil Weeramantry",
     colorDescription: "Black spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780812932717-L.jpg",
-    polygon: [{x:245,y:330}, {x:285,y:330}, {x:285,y:850}, {x:245,y:850}]
+    polygon: [{x:255,y:260}, {x:300,y:260}, {x:300,y:850}, {x:255,y:850}]
   },
   {
     id: "weapons-chess",
@@ -595,85 +588,77 @@ const GAMES_BOOKS: BookSpine[] = [
     author: "Bruce Pandolfini",
     colorDescription: "Pink/Red spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780671659724-L.jpg",
-    polygon: [{x:285,y:330}, {x:310,y:330}, {x:310,y:850}, {x:285,y:850}]
+    polygon: [{x:300,y:260}, {x:335,y:260}, {x:335,y:850}, {x:300,y:850}]
   },
   {
-    id: "basic-bridge",
+    id: "basic-bridge-klinger",
     title: "Basic Bridge",
-    author: "Unknown",
-    colorDescription: "Red spine.",
-    polygon: [{x:310,y:330}, {x:335,y:330}, {x:335,y:850}, {x:310,y:850}]
-  },
-  {
-    id: "klinger",
-    title: "Klinger on Bridge",
     author: "Ron Klinger",
-    colorDescription: "Red spine.",
-    polygon: [{x:335,y:330}, {x:350,y:330}, {x:350,y:850}, {x:335,y:850}]
+    colorDescription: "Red spine with 'BASIC BRIDGE' and 'KLINGER' text.",
+    polygon: [{x:335,y:260}, {x:365,y:260}, {x:365,y:850}, {x:335,y:850}]
   },
   {
     id: "bridge-club",
     title: "Bridge: The Club Series",
     author: "Audrey Grant",
     colorDescription: "Blue spine.",
-    polygon: [{x:350,y:330}, {x:370,y:330}, {x:370,y:850}, {x:350,y:850}]
+    polygon: [{x:365,y:260}, {x:390,y:260}, {x:390,y:850}, {x:365,y:850}]
   },
   {
     id: "bridge-tricks",
     title: "25 Ways to Take More Tricks as Declarer",
     author: "Seagram & Bird",
     colorDescription: "Cream spine.",
-    polygon: [{x:370,y:330}, {x:390,y:330}, {x:390,y:850}, {x:370,y:850}]
-  },
-  {
-    id: "bridge-diamond",
-    title: "Bridge: The Diamond Series",
-    author: "Audrey Grant",
-    colorDescription: "Blue spine.",
-    polygon: [{x:390,y:330}, {x:420,y:330}, {x:420,y:850}, {x:390,y:850}]
+    polygon: [{x:390,y:260}, {x:420,y:260}, {x:420,y:850}, {x:390,y:850}]
   },
   {
     id: "bridge-heart",
     title: "Bridge: The Heart Series",
     author: "Audrey Grant",
     colorDescription: "Blue spine.",
-    polygon: [{x:420,y:330}, {x:450,y:330}, {x:450,y:850}, {x:420,y:850}]
+    polygon: [{x:420,y:260}, {x:450,y:260}, {x:450,y:850}, {x:420,y:850}]
+  },
+  {
+    id: "bridge-diamond",
+    title: "Bridge: The Diamond Series",
+    author: "Audrey Grant",
+    colorDescription: "Blue spine.",
+    polygon: [{x:450,y:260}, {x:480,y:260}, {x:480,y:850}, {x:450,y:850}]
   },
   {
     id: "bridge-maxims",
     title: "Bridge Maxims",
     author: "Audrey Grant",
     colorDescription: "Blue spine.",
-    polygon: [{x:450,y:330}, {x:495,y:330}, {x:495,y:850}, {x:450,y:850}]
+    polygon: [{x:480,y:260}, {x:530,y:260}, {x:530,y:850}, {x:480,y:850}]
   },
   {
     id: "learn-bridge",
     title: "Learn to Play Bridge",
     author: "Gary Brown",
     colorDescription: "Black spine.",
-    polygon: [{x:495,y:330}, {x:505,y:330}, {x:505,y:850}, {x:495,y:850}]
+    polygon: [{x:530,y:260}, {x:545,y:260}, {x:545,y:850}, {x:530,y:850}]
   },
-  // Right side books
   {
     id: "survive-bridge",
     title: "How to Survive Your First Bridge Tournament",
     author: "David Burn",
     colorDescription: "Green/White spine.",
-    polygon: [{x:575,y:330}, {x:610,y:330}, {x:610,y:850}, {x:575,y:850}]
+    polygon: [{x:545,y:260}, {x:575,y:260}, {x:575,y:850}, {x:545,y:850}]
   },
   {
     id: "little-puzzle",
     title: "The Little Puzzle Book",
     author: "Gareth Moore",
     colorDescription: "Red spine.",
-    polygon: [{x:610,y:330}, {x:635,y:330}, {x:635,y:850}, {x:610,y:850}]
+    polygon: [{x:575,y:260}, {x:605,y:260}, {x:605,y:850}, {x:575,y:850}]
   },
   {
     id: "tiger-that-isnt",
     title: "The Tiger That Isn't",
     author: "Michael Blastland",
     colorDescription: "Orange spine.",
-    polygon: [{x:635,y:330}, {x:665,y:330}, {x:665,y:850}, {x:635,y:850}]
+    polygon: [{x:605,y:260}, {x:645,y:260}, {x:645,y:850}, {x:605,y:850}]
   },
   {
     id: "can-you-solve",
@@ -681,14 +666,14 @@ const GAMES_BOOKS: BookSpine[] = [
     author: "Alex Bellos",
     colorDescription: "White spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781783351145-L.jpg",
-    polygon: [{x:665,y:330}, {x:715,y:330}, {x:715,y:850}, {x:665,y:850}]
+    polygon: [{x:645,y:260}, {x:700,y:260}, {x:700,y:850}, {x:645,y:850}]
   },
   {
     id: "socks-pair",
     title: "How Many Socks Make a Pair?",
     author: "Rob Eastaway",
     colorDescription: "Blue spine.",
-    polygon: [{x:715,y:330}, {x:755,y:330}, {x:755,y:850}, {x:715,y:850}]
+    polygon: [{x:700,y:260}, {x:745,y:260}, {x:745,y:850}, {x:700,y:850}]
   },
   {
     id: "riddler",
@@ -696,7 +681,7 @@ const GAMES_BOOKS: BookSpine[] = [
     author: "Oliver Roeder",
     colorDescription: "Blue spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781324003690-L.jpg",
-    polygon: [{x:755,y:330}, {x:795,y:330}, {x:795,y:850}, {x:755,y:850}]
+    polygon: [{x:745,y:260}, {x:790,y:260}, {x:790,y:850}, {x:745,y:850}]
   },
   {
     id: "smart-google",
@@ -704,21 +689,21 @@ const GAMES_BOOKS: BookSpine[] = [
     author: "William Poundstone",
     colorDescription: "Yellow/Green/Red spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780316099981-L.jpg",
-    polygon: [{x:795,y:330}, {x:835,y:330}, {x:835,y:850}, {x:795,y:850}]
+    polygon: [{x:790,y:260}, {x:835,y:260}, {x:835,y:850}, {x:790,y:850}]
   },
   {
     id: "math-brainteasers",
     title: "Mathematical Brainteasers",
     author: "Maria O'Shea",
     colorDescription: "White spine.",
-    polygon: [{x:835,y:330}, {x:870,y:330}, {x:870,y:850}, {x:835,y:850}]
+    polygon: [{x:835,y:260}, {x:880,y:260}, {x:880,y:850}, {x:835,y:850}]
   },
   {
     id: "bletchley-park",
     title: "Bletchley Park Brainteasers",
     author: "Sinclair McKay",
     colorDescription: "Red spine.",
-    polygon: [{x:870,y:330}, {x:915,y:330}, {x:915,y:850}, {x:870,y:850}]
+    polygon: [{x:880,y:260}, {x:935,y:260}, {x:935,y:850}, {x:880,y:850}]
   },
   {
     id: "language-lover",
@@ -726,7 +711,7 @@ const GAMES_BOOKS: BookSpine[] = [
     author: "Alex Bellos",
     colorDescription: "White spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781783352180-L.jpg",
-    polygon: [{x:915,y:330}, {x:965,y:330}, {x:965,y:850}, {x:915,y:850}]
+    polygon: [{x:935,y:260}, {x:990,y:260}, {x:990,y:850}, {x:935,y:850}]
   }
 ];
 
