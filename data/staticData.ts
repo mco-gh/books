@@ -868,7 +868,7 @@ const FICTION_BOOKS: BookSpine[] = [
     author: "Alice Oseman",
     colorDescription: "Orange spine with large handwritten black text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781444957655-L.jpg",
-    polygon: [{x:35,y:40}, {x:135,y:40}, {x:135,y:960}, {x:35,y:960}]
+    polygon: [{x:20,y:50}, {x:175,y:50}, {x:175,y:960}, {x:20,y:960}]
   },
   {
     id: "xu-bing",
@@ -876,14 +876,14 @@ const FICTION_BOOKS: BookSpine[] = [
     author: "Xu Bing",
     colorDescription: "Black spine with white symbols/arrows.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780262027083-L.jpg",
-    polygon: [{x:135,y:100}, {x:165,y:100}, {x:165,y:960}, {x:135,y:960}]
+    polygon: [{x:175,y:120}, {x:205,y:120}, {x:205,y:960}, {x:175,y:960}]
   },
   {
     id: "wilde-boy",
     title: "Wilde Without the Boy",
     author: "Gareth Armstrong",
     colorDescription: "Black spine with white text.",
-    polygon: [{x:165,y:110}, {x:185,y:110}, {x:185,y:960}, {x:165,y:960}]
+    polygon: [{x:205,y:120}, {x:240,y:120}, {x:240,y:960}, {x:205,y:960}]
   },
   {
     id: "mysterious-stranger",
@@ -891,7 +891,7 @@ const FICTION_BOOKS: BookSpine[] = [
     author: "Mark Twain",
     colorDescription: "White spine with black text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780486270692-L.jpg",
-    polygon: [{x:185,y:110}, {x:210,y:110}, {x:210,y:960}, {x:185,y:960}]
+    polygon: [{x:240,y:110}, {x:268,y:110}, {x:268,y:960}, {x:240,y:960}]
   },
   {
     id: "child-god",
@@ -899,7 +899,14 @@ const FICTION_BOOKS: BookSpine[] = [
     author: "Cormac McCarthy",
     colorDescription: "Red spine with black text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780679747047-L.jpg",
-    polygon: [{x:210,y:115}, {x:255,y:115}, {x:255,y:960}, {x:210,y:960}]
+    polygon: [{x:268,y:110}, {x:320,y:110}, {x:320,y:960}, {x:268,y:960}]
+  },
+  {
+    id: "greatest-play",
+    title: "The Greatest Play in the History of the World",
+    author: "Ian Kershaw",
+    colorDescription: "Dark/Black spine with white text.",
+    polygon: [{x:320,y:110}, {x:390,y:110}, {x:390,y:960}, {x:320,y:960}]
   },
   {
     id: "talk-about-love",
@@ -907,7 +914,7 @@ const FICTION_BOOKS: BookSpine[] = [
     author: "Raymond Carver",
     colorDescription: "Red spine with white text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780679723058-L.jpg",
-    polygon: [{x:255,y:115}, {x:300,y:115}, {x:300,y:960}, {x:255,y:960}]
+    polygon: [{x:390,y:110}, {x:418,y:110}, {x:418,y:960}, {x:390,y:960}]
   },
   {
     id: "end-affair",
@@ -915,21 +922,21 @@ const FICTION_BOOKS: BookSpine[] = [
     author: "Graham Greene",
     colorDescription: "Red spine with white text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780099284370-L.jpg",
-    polygon: [{x:300,y:115}, {x:345,y:115}, {x:345,y:960}, {x:300,y:960}]
+    polygon: [{x:418,y:110}, {x:488,y:110}, {x:488,y:960}, {x:418,y:960}]
   },
   {
     id: "velvet-stone",
     title: "Velvet and Stone",
-    author: "Douglas Maxwell",
-    colorDescription: "Light blue spine.",
-    polygon: [{x:345,y:100}, {x:370,y:100}, {x:370,y:960}, {x:345,y:960}]
+    author: "Kramer",
+    colorDescription: "White/Cream spine with pink dot.",
+    polygon: [{x:488,y:110}, {x:558,y:110}, {x:558,y:960}, {x:488,y:960}]
   },
   {
     id: "so-young",
     title: "So Young",
     author: "Douglas Maxwell",
-    colorDescription: "Blue spine.",
-    polygon: [{x:370,y:100}, {x:395,y:100}, {x:395,y:960}, {x:370,y:960}]
+    colorDescription: "Light blue spine.",
+    polygon: [{x:558,y:110}, {x:593,y:110}, {x:593,y:960}, {x:558,y:960}]
   },
   {
     id: "androids-sheep",
@@ -937,7 +944,7 @@ const FICTION_BOOKS: BookSpine[] = [
     author: "Philip K. Dick",
     colorDescription: "Yellow spine with black text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780345404473-L.jpg",
-    polygon: [{x:395,y:60}, {x:460,y:60}, {x:460,y:960}, {x:395,y:960}]
+    polygon: [{x:593,y:60}, {x:628,y:60}, {x:628,y:960}, {x:593,y:960}]
   },
   {
     id: "novelist-vocation",
@@ -945,7 +952,7 @@ const FICTION_BOOKS: BookSpine[] = [
     author: "Haruki Murakami",
     colorDescription: "Black spine with red circle design.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780593318072-L.jpg",
-    polygon: [{x:460,y:65}, {x:520,y:65}, {x:520,y:960}, {x:460,y:960}]
+    polygon: [{x:628,y:65}, {x:715,y:65}, {x:715,y:960}, {x:628,y:960}]
   },
   {
     id: "burning-bright",
@@ -953,7 +960,7 @@ const FICTION_BOOKS: BookSpine[] = [
     author: "John Steinbeck",
     colorDescription: "White spine with black text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780143039440-L.jpg",
-    polygon: [{x:520,y:130}, {x:565,y:130}, {x:565,y:960}, {x:520,y:960}]
+    polygon: [{x:715,y:130}, {x:802,y:130}, {x:802,y:960}, {x:715,y:960}]
   },
   {
     id: "library-babel",
@@ -961,7 +968,7 @@ const FICTION_BOOKS: BookSpine[] = [
     author: "Jorge Luis Borges",
     colorDescription: "Orange spine with geometric pattern.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781567921236-L.jpg",
-    polygon: [{x:565,y:220}, {x:640,y:220}, {x:640,y:960}, {x:565,y:960}]
+    polygon: [{x:802,y:220}, {x:854,y:220}, {x:854,y:960}, {x:802,y:960}]
   }
 ];
 
