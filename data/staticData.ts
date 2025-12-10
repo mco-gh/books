@@ -3,7 +3,7 @@ import { BookSpine } from "../types";
 const PROGRAMMING_IMAGE_SRC = "https://mco.dev/img/programming.jpg";
 const GENERAL_IMAGE_SRC = "https://mco.dev/img/general.jpg";
 const GAMES_IMAGE_SRC = "https://mco.dev/img/games.jpg";
-const AI_IMAGE_SRC = "https://mco.dev/img/ml.jpg";
+const AI_IMAGE_SRC = "https://mco.dev/img/ai.jpg";
 const FICTION_IMAGE_SRC = "https://mco.dev/img/fiction.jpg";
 
 const PROGRAMMING_BOOKS: BookSpine[] = [
@@ -717,12 +717,12 @@ const GAMES_BOOKS: BookSpine[] = [
 
 const AI_BOOKS: BookSpine[] = [
   {
-    id: "grokking-dl",
+    id: "grokking-dl-1",
     title: "Grokking Deep Learning",
     author: "Andrew Trask",
     colorDescription: "White spine with red text and Manning logo.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781617293702-L.jpg",
-    polygon: [{x:10,y:150}, {x:38,y:150}, {x:38,y:890}, {x:10,y:890}]
+    polygon: [{x:14,y:140}, {x:55,y:140}, {x:55,y:900}, {x:14,y:900}]
   },
   {
     id: "dl-illustrated",
@@ -730,7 +730,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "Jon Krohn",
     colorDescription: "Blue and white spine.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9780135116692-L.jpg",
-    polygon: [{x:38,y:150}, {x:80,y:150}, {x:80,y:890}, {x:38,y:890}]
+    polygon: [{x:55,y:140}, {x:100,y:140}, {x:100,y:900}, {x:55,y:900}]
   },
   {
     id: "storytelling",
@@ -738,7 +738,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "Cole Nussbaumer Knaflic",
     colorDescription: "White spine with blue/grey text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781119002253-L.jpg",
-    polygon: [{x:80,y:150}, {x:112,y:150}, {x:112,y:890}, {x:80,y:890}]
+    polygon: [{x:100,y:140}, {x:135,y:140}, {x:135,y:900}, {x:100,y:900}]
   },
   {
     id: "hands-on-ml",
@@ -746,14 +746,22 @@ const AI_BOOKS: BookSpine[] = [
     author: "Aurélien Géron",
     colorDescription: "White spine with red O'Reilly logo.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781492032649-L.jpg",
-    polygon: [{x:112,y:150}, {x:162,y:150}, {x:162,y:890}, {x:112,y:890}]
+    polygon: [{x:135,y:140}, {x:195,y:140}, {x:195,y:900}, {x:135,y:900}]
   },
   {
     id: "intro-ds",
     title: "Introduction to Data Science",
     author: "Igual & Segui",
     colorDescription: "White spine with teal header and O'Reilly logo.",
-    polygon: [{x:162,y:150}, {x:192,y:150}, {x:192,y:890}, {x:162,y:890}]
+    polygon: [{x:195,y:140}, {x:225,y:140}, {x:225,y:900}, {x:195,y:900}]
+  },
+  {
+    id: "grokking-dl-2",
+    title: "Grokking Deep Learning",
+    author: "Andrew Trask",
+    colorDescription: "White spine with red text and Manning logo.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781617293702-L.jpg",
+    polygon: [{x:225,y:140}, {x:265,y:140}, {x:265,y:900}, {x:225,y:900}]
   },
   {
     id: "data-smart",
@@ -761,7 +769,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "John Foreman",
     colorDescription: "Green/Dark spine with white text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781118661468-L.jpg",
-    polygon: [{x:192,y:150}, {x:235,y:150}, {x:235,y:890}, {x:192,y:890}]
+    polygon: [{x:265,y:140}, {x:315,y:140}, {x:315,y:900}, {x:265,y:900}]
   },
   {
     id: "hands-on-llm",
@@ -769,7 +777,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "Alammar & Grootendorst",
     colorDescription: "White spine with red O'Reilly logo.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781098150969-L.jpg",
-    polygon: [{x:235,y:150}, {x:290,y:150}, {x:290,y:890}, {x:235,y:890}]
+    polygon: [{x:315,y:140}, {x:370,y:140}, {x:370,y:900}, {x:315,y:900}]
   },
   {
     id: "dl-python",
@@ -777,7 +785,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "François Chollet",
     colorDescription: "Red spine with white text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781617294433-L.jpg",
-    polygon: [{x:290,y:150}, {x:348,y:150}, {x:348,y:890}, {x:290,y:890}]
+    polygon: [{x:370,y:140}, {x:430,y:140}, {x:430,y:900}, {x:370,y:900}]
   },
   {
     id: "ml-design-patterns",
@@ -785,7 +793,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "Lakshmanan et al.",
     colorDescription: "White spine with red O'Reilly logo.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781098115784-L.jpg",
-    polygon: [{x:348,y:150}, {x:400,y:150}, {x:400,y:890}, {x:348,y:890}]
+    polygon: [{x:430,y:140}, {x:480,y:140}, {x:480,y:900}, {x:430,y:900}]
   },
   {
     id: "gen-dl",
@@ -793,7 +801,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "David Foster",
     colorDescription: "White spine with red O'Reilly logo.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781492041948-L.jpg",
-    polygon: [{x:400,y:150}, {x:450,y:150}, {x:450,y:890}, {x:400,y:890}]
+    polygon: [{x:480,y:140}, {x:520,y:140}, {x:520,y:900}, {x:480,y:900}]
   },
   {
     id: "gce",
@@ -801,7 +809,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "Marc Cohen et al.",
     colorDescription: "Purple spine with bird image and O'Reilly logo.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781449360887-L.jpg",
-    polygon: [{x:450,y:150}, {x:490,y:150}, {x:490,y:890}, {x:450,y:890}]
+    polygon: [{x:520,y:140}, {x:560,y:140}, {x:560,y:900}, {x:520,y:900}]
   },
   {
     id: "serverless",
@@ -809,7 +817,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "Wietse Venema",
     colorDescription: "White spine with red O'Reilly logo.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781492041344-L.jpg",
-    polygon: [{x:490,y:150}, {x:525,y:150}, {x:525,y:890}, {x:490,y:890}]
+    polygon: [{x:560,y:140}, {x:595,y:140}, {x:595,y:900}, {x:560,y:900}]
   },
   {
     id: "numsense",
@@ -817,7 +825,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "Annalyn Ng & Kenneth Soo",
     colorDescription: "White spine with blue accent.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9789811110689-L.jpg",
-    polygon: [{x:525,y:150}, {x:555,y:150}, {x:555,y:890}, {x:525,y:890}]
+    polygon: [{x:595,y:140}, {x:625,y:140}, {x:625,y:900}, {x:595,y:900}]
   },
   {
     id: "python-ds-handbook",
@@ -825,7 +833,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "Jake VanderPlas",
     colorDescription: "Red spine with O'Reilly logo.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781491912058-L.jpg",
-    polygon: [{x:555,y:150}, {x:615,y:150}, {x:615,y:890}, {x:555,y:890}]
+    polygon: [{x:625,y:140}, {x:695,y:140}, {x:695,y:900}, {x:625,y:900}]
   },
   {
     id: "ds-design-manual",
@@ -833,7 +841,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "Steven S. Skiena",
     colorDescription: "Blue spine with Springer logo.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9783319554433-L.jpg",
-    polygon: [{x:615,y:150}, {x:690,y:150}, {x:690,y:890}, {x:615,y:890}]
+    polygon: [{x:695,y:140}, {x:765,y:140}, {x:765,y:900}, {x:695,y:900}]
   },
   {
     id: "ds-scratch",
@@ -841,7 +849,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "Joel Grus",
     colorDescription: "White spine with red O'Reilly logo.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781492041139-L.jpg",
-    polygon: [{x:690,y:150}, {x:750,y:150}, {x:750,y:890}, {x:690,y:890}]
+    polygon: [{x:765,y:140}, {x:825,y:140}, {x:825,y:900}, {x:765,y:900}]
   },
   {
     id: "build-llm",
@@ -849,7 +857,7 @@ const AI_BOOKS: BookSpine[] = [
     author: "Sebastian Raschka",
     colorDescription: "Black spine with white text.",
     coverImage: "https://covers.openlibrary.org/b/isbn/9781633437166-L.jpg",
-    polygon: [{x:750,y:140}, {x:860,y:140}, {x:860,y:900}, {x:750,y:900}]
+    polygon: [{x:825,y:135}, {x:985,y:135}, {x:985,y:910}, {x:825,y:910}]
   }
 ];
 
