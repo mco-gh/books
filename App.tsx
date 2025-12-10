@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import InteractiveBookshelf from './components/InteractiveBookshelf';
-import { STATIC_BOOKS, STATIC_IMAGE_SRC } from './data/staticData';
+import { SHELVES } from './data/staticData';
 import { Library, X } from 'lucide-react';
 
 const App: React.FC = () => {
-  // Use static data directly
-  const [books] = useState(STATIC_BOOKS);
-  const [imageSrc] = useState(STATIC_IMAGE_SRC);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
 
   return (
@@ -32,12 +29,16 @@ const App: React.FC = () => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-grow flex flex-col items-center justify-center p-4 sm:p-8">
+      <main className="flex-grow flex flex-col items-center justify-center p-4 sm:p-8 space-y-12">
         <div className="w-full flex flex-col items-center">
-            <InteractiveBookshelf 
-              imageSrc={imageSrc} 
-              books={books} 
-            />
+            {SHELVES.map((shelf) => (
+                <InteractiveBookshelf 
+                    key={shelf.id}
+                    title={shelf.title}
+                    imageSrc={shelf.image} 
+                    books={shelf.books} 
+                />
+            ))}
         </div>
       </main>
 

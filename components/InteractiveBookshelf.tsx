@@ -3,11 +3,12 @@ import { BookSpine } from '../types';
 import { Info, X, ShoppingCart, ExternalLink, BookOpen } from 'lucide-react';
 
 interface InteractiveBookshelfProps {
+  title: string;
   imageSrc: string;
   books: BookSpine[];
 }
 
-const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ imageSrc, books }) => {
+const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ title, imageSrc, books }) => {
   const [hoveredBookId, setHoveredBookId] = useState<string | null>(null);
   const [selectedBookId, setSelectedBookId] = useState<string | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -55,7 +56,7 @@ const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ imageSrc, b
   };
 
   return (
-    <div className="flex flex-col items-center w-full max-w-7xl mx-auto p-4 animate-fade-in relative">
+    <div className="flex flex-col items-center w-full max-w-7xl mx-auto p-4 animate-fade-in relative mb-16 last:mb-0">
       
       {/* Floating Tooltip (Hover) */}
       {hoveredBook && !selectedBook && (
@@ -81,7 +82,7 @@ const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ imageSrc, b
 
       {/* Control Bar */}
       <div className="w-full flex flex-col items-start mb-6 bg-gray-800 p-5 rounded-xl shadow-lg border border-gray-700">
-        <h2 className="text-2xl font-bold text-white mb-2">Programming</h2>
+        <h2 className="text-2xl font-bold text-white mb-2">{title}</h2>
         <div className="flex items-center space-x-2">
             <Info className="text-blue-400" size={18} />
             <span className="text-sm text-gray-300 font-medium">
@@ -100,7 +101,7 @@ const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ imageSrc, b
         >
             <img 
                 src={imageSrc} 
-                alt="Analyzed Bookshelf" 
+                alt={`${title} Bookshelf`} 
                 className="w-full h-auto object-contain block select-none"
             />
             
@@ -132,7 +133,7 @@ const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ imageSrc, b
         </div>
 
         {/* Info Panel (Sidebar) */}
-        <div className="w-full xl:w-1/4 flex flex-col gap-4 min-h-[400px]">
+        <div className="w-full xl:w-1/4 flex flex-col gap-4 min-h-[300px]">
             <div className={`
                 bg-gray-800 border border-gray-700 rounded-xl p-8 h-full transition-all duration-300 shadow-xl relative overflow-hidden
             `}>

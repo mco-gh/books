@@ -1,8 +1,9 @@
 import { BookSpine } from "../types";
 
-export const STATIC_IMAGE_SRC = "https://mco.dev/img/programming.jpg";
+const PROGRAMMING_IMAGE_SRC = "https://mco.dev/img/programming.jpg";
+const GENERAL_IMAGE_SRC = "https://mco.dev/img/general.jpg";
 
-export const STATIC_BOOKS: BookSpine[] = [
+const PROGRAMMING_BOOKS: BookSpine[] = [
   {
     id: "crafting-interpreters",
     title: "Crafting Interpreters",
@@ -212,7 +213,7 @@ export const STATIC_BOOKS: BookSpine[] = [
     ],
   },
   {
-    id: "elements-style",
+    id: "elements-style-prog",
     title: "The Elements of Programming Style",
     author: "Kernighan & Plauger",
     colorDescription: "White spine, vintage. Kernighan and Plauger.",
@@ -289,3 +290,249 @@ export const STATIC_BOOKS: BookSpine[] = [
     ],
   },
 ];
+
+const GENERAL_BOOKS: BookSpine[] = [
+  {
+    id: "tell-me-why",
+    title: "Tell Me Why",
+    author: "Arkady Leokum",
+    colorDescription: "Blue spine with white text 'TELL ME WHY'.",
+    polygon: [{x:0,y:440}, {x:64,y:440}, {x:64,y:910}, {x:0,y:910}]
+  },
+  {
+    id: "what-if",
+    title: "What If?",
+    author: "Randall Munroe",
+    colorDescription: "White spine with red text 'what if?'.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780544272996-L.jpg",
+    polygon: [{x:64,y:440}, {x:108,y:442}, {x:108,y:910}, {x:64,y:910}]
+  },
+  {
+    id: "social-work",
+    title: "Social Work in a Changing Scotland",
+    author: "Viv Cree",
+    colorDescription: "Black spine.",
+    polygon: [{x:108,y:442}, {x:142,y:442}, {x:142,y:910}, {x:108,y:910}]
+  },
+  {
+    id: "thousand-brains",
+    title: "A Thousand Brains",
+    author: "Jeff Hawkins",
+    colorDescription: "White spine with black text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781541675810-L.jpg",
+    polygon: [{x:142,y:442}, {x:192,y:443}, {x:192,y:910}, {x:142,y:910}]
+  },
+  {
+    id: "brilliant-maps",
+    title: "Brilliant Maps for Curious Minds",
+    author: "Ian Wright",
+    colorDescription: "Cyan/Light blue spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781615196258-L.jpg",
+    polygon: [{x:192,y:443}, {x:218,y:444}, {x:218,y:910}, {x:192,y:910}]
+  },
+  {
+    id: "stone-pony",
+    title: "I Don't Want to Go Home: The Oral History of the Stone Pony",
+    author: "Nick Corasaniti",
+    colorDescription: "Black/Dark grey spine with white horse icon.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780063026360-L.jpg",
+    polygon: [{x:218,y:444}, {x:256,y:445}, {x:256,y:910}, {x:218,y:910}]
+  },
+  {
+    id: "super-thinking",
+    title: "Super Thinking",
+    author: "Gabriel Weinberg",
+    colorDescription: "Blue and Yellow spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780525533580-L.jpg",
+    polygon: [{x:256,y:445}, {x:296,y:446}, {x:296,y:910}, {x:256,y:910}]
+  },
+  {
+    id: "5am-club",
+    title: "The 5 AM Club",
+    author: "Robin Sharma",
+    colorDescription: "Orange spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781443456623-L.jpg",
+    polygon: [{x:296,y:446}, {x:332,y:448}, {x:332,y:910}, {x:296,y:910}]
+  },
+  {
+    id: "code",
+    title: "Code",
+    author: "Charles Petzold",
+    colorDescription: "Dark blue spine with word CODE vertically.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780735611313-L.jpg",
+    polygon: [{x:332,y:448}, {x:356,y:449}, {x:356,y:910}, {x:332,y:910}]
+  },
+  {
+    id: "annotated-turing",
+    title: "The Annotated Turing",
+    author: "Charles Petzold",
+    colorDescription: "Black spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780470229057-L.jpg",
+    polygon: [{x:356,y:449}, {x:384,y:450}, {x:384,y:910}, {x:356,y:910}]
+  },
+  {
+    id: "learning-how-to-learn",
+    title: "Learning How to Learn",
+    author: "Barbara Oakley",
+    colorDescription: "White spine with black text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780143132547-L.jpg",
+    polygon: [{x:384,y:450}, {x:408,y:450}, {x:408,y:910}, {x:384,y:910}]
+  },
+  {
+    id: "unix-history",
+    title: "Unix: A History and a Memoir",
+    author: "Brian Kernighan",
+    colorDescription: "Blue/Grey spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781695978553-L.jpg",
+    polygon: [{x:408,y:450}, {x:438,y:451}, {x:438,y:910}, {x:408,y:910}]
+  },
+  {
+    id: "dont-make-me-think",
+    title: "Don't Make Me Think, Revisited",
+    author: "Steve Krug",
+    colorDescription: "Red spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780321965516-L.jpg",
+    polygon: [{x:438,y:451}, {x:462,y:452}, {x:462,y:910}, {x:438,y:910}]
+  },
+  {
+    id: "world-without-email",
+    title: "A World Without Email",
+    author: "Cal Newport",
+    colorDescription: "Black spine with CAL NEWPORT in large letters.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780525536550-L.jpg",
+    polygon: [{x:462,y:452}, {x:522,y:453}, {x:522,y:910}, {x:462,y:910}]
+  },
+  {
+    id: "do-you-talk-funny",
+    title: "Do You Talk Funny?",
+    author: "David Nihill",
+    colorDescription: "Black spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781942952275-L.jpg",
+    polygon: [{x:522,y:453}, {x:548,y:453}, {x:548,y:910}, {x:522,y:910}]
+  },
+  {
+    id: "remember-it",
+    title: "Remember It!",
+    author: "Nelson Dellis",
+    colorDescription: "Blue spine with yellow text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781419732560-L.jpg",
+    polygon: [{x:548,y:453}, {x:588,y:453}, {x:588,y:910}, {x:548,y:910}]
+  },
+  {
+    id: "in-our-defense",
+    title: "In Our Defense",
+    author: "Ellen Alderman",
+    colorDescription: "Yellow/Beige spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780380717207-L.jpg",
+    polygon: [{x:588,y:453}, {x:636,y:454}, {x:636,y:910}, {x:588,y:910}]
+  },
+  {
+    id: "stroke-of-insight",
+    title: "My Stroke of Insight",
+    author: "Jill Bolte Taylor",
+    colorDescription: "White spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780452295571-L.jpg",
+    polygon: [{x:636,y:454}, {x:660,y:454}, {x:660,y:910}, {x:636,y:910}]
+  },
+  {
+    id: "write-one-song",
+    title: "How To Write One Song",
+    author: "Jeff Tweedy",
+    colorDescription: "White spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780593183526-L.jpg",
+    polygon: [{x:660,y:454}, {x:700,y:454}, {x:700,y:910}, {x:660,y:910}]
+  },
+  {
+    id: "7-half-lessons",
+    title: "Seven and a Half Lessons About the Brain",
+    author: "Lisa Feldman Barrett",
+    colorDescription: "Dark blue/purple spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780358164069-L.jpg",
+    polygon: [{x:700,y:454}, {x:728,y:455}, {x:728,y:910}, {x:700,y:910}]
+  },
+  {
+    id: "expect-unexpected",
+    title: "How to Expect the Unexpected",
+    author: "Kit Yates",
+    colorDescription: "Red spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781529408461-L.jpg",
+    polygon: [{x:728,y:455}, {x:764,y:455}, {x:764,y:910}, {x:728,y:910}]
+  },
+  {
+    id: "coming-wave",
+    title: "The Coming Wave",
+    author: "Mustafa Suleyman",
+    colorDescription: "Blue spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780804140039-L.jpg",
+    polygon: [{x:764,y:455}, {x:804,y:456}, {x:804,y:910}, {x:764,y:910}]
+  },
+  {
+    id: "elements-style-game",
+    title: "The Elements of Style",
+    author: "Strunk & White",
+    colorDescription: "White thin spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780205309023-L.jpg",
+    polygon: [{x:804,y:456}, {x:820,y:456}, {x:820,y:910}, {x:804,y:910}]
+  },
+  {
+    id: "know-your-rights",
+    title: "Know Your Rights!",
+    author: "Laura Barcella",
+    colorDescription: "Yellow/Green thin spine.",
+    polygon: [{x:820,y:456}, {x:836,y:456}, {x:836,y:910}, {x:820,y:910}]
+  },
+  {
+    id: "the-computer",
+    title: "The Computer",
+    author: "Unknown",
+    colorDescription: "Black/Grey spine.",
+    polygon: [{x:836,y:456}, {x:860,y:456}, {x:860,y:910}, {x:836,y:910}]
+  },
+  {
+    id: "london-bookshops",
+    title: "An Opinionated Guide to London Bookshops",
+    author: "Sonya Barber",
+    colorDescription: "White spine.",
+    polygon: [{x:860,y:456}, {x:884,y:456}, {x:884,y:910}, {x:860,y:910}]
+  },
+  {
+    id: "card-games",
+    title: "Card Games",
+    author: "Collins",
+    colorDescription: "White spine with black text.",
+    polygon: [{x:884,y:456}, {x:920,y:457}, {x:920,y:910}, {x:884,y:910}]
+  },
+  {
+    id: "london-system",
+    title: "The London System in 12 Practical Lessons",
+    author: "Oscar de Prado",
+    colorDescription: "Yellow spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781906454518-L.jpg",
+    polygon: [{x:920,y:457}, {x:956,y:458}, {x:956,y:910}, {x:920,y:910}]
+  },
+  {
+    id: "50-chess-questions",
+    title: "50 Chess Questions",
+    author: "Ray Cheng",
+    colorDescription: "Red spine.",
+    polygon: [{x:956,y:458}, {x:1000,y:458}, {x:1000,y:910}, {x:956,y:910}]
+  }
+];
+
+export const SHELVES = [
+  {
+    id: "programming",
+    title: "Programming",
+    image: PROGRAMMING_IMAGE_SRC,
+    books: PROGRAMMING_BOOKS
+  },
+  {
+    id: "general",
+    title: "General",
+    image: GENERAL_IMAGE_SRC,
+    books: GENERAL_BOOKS
+  }
+];
+
+export const STATIC_BOOKS = PROGRAMMING_BOOKS;
+export const STATIC_IMAGE_SRC = PROGRAMMING_IMAGE_SRC;
