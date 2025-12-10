@@ -3,6 +3,8 @@ import { BookSpine } from "../types";
 const PROGRAMMING_IMAGE_SRC = "https://mco.dev/img/programming.jpg";
 const GENERAL_IMAGE_SRC = "https://mco.dev/img/general.jpg";
 const GAMES_IMAGE_SRC = "https://mco.dev/img/games.jpg";
+const AI_IMAGE_SRC = "https://mco.dev/img/ml.jpg";
+const FICTION_IMAGE_SRC = "https://mco.dev/img/fiction.jpg";
 
 const PROGRAMMING_BOOKS: BookSpine[] = [
   {
@@ -728,12 +730,260 @@ const GAMES_BOOKS: BookSpine[] = [
   }
 ];
 
+const AI_BOOKS: BookSpine[] = [
+  {
+    id: "grokking-dl",
+    title: "Grokking Deep Learning",
+    author: "Andrew Trask",
+    colorDescription: "White spine with red text and Manning logo.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781617293702-L.jpg",
+    polygon: [{x:10,y:150}, {x:38,y:150}, {x:38,y:890}, {x:10,y:890}]
+  },
+  {
+    id: "dl-illustrated",
+    title: "Deep Learning Illustrated",
+    author: "Jon Krohn",
+    colorDescription: "Blue and white spine.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780135116692-L.jpg",
+    polygon: [{x:38,y:150}, {x:80,y:150}, {x:80,y:890}, {x:38,y:890}]
+  },
+  {
+    id: "storytelling",
+    title: "Storytelling with Data",
+    author: "Cole Nussbaumer Knaflic",
+    colorDescription: "White spine with blue/grey text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781119002253-L.jpg",
+    polygon: [{x:80,y:150}, {x:112,y:150}, {x:112,y:890}, {x:80,y:890}]
+  },
+  {
+    id: "hands-on-ml",
+    title: "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+    author: "Aurélien Géron",
+    colorDescription: "White spine with red O'Reilly logo.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781492032649-L.jpg",
+    polygon: [{x:112,y:150}, {x:162,y:150}, {x:162,y:890}, {x:112,y:890}]
+  },
+  {
+    id: "intro-ds",
+    title: "Introduction to Data Science",
+    author: "Igual & Segui",
+    colorDescription: "White spine with teal header and O'Reilly logo.",
+    polygon: [{x:162,y:150}, {x:192,y:150}, {x:192,y:890}, {x:162,y:890}]
+  },
+  {
+    id: "data-smart",
+    title: "Data Smart",
+    author: "John Foreman",
+    colorDescription: "Green/Dark spine with white text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781118661468-L.jpg",
+    polygon: [{x:192,y:150}, {x:235,y:150}, {x:235,y:890}, {x:192,y:890}]
+  },
+  {
+    id: "hands-on-llm",
+    title: "Hands-On Large Language Models",
+    author: "Alammar & Grootendorst",
+    colorDescription: "White spine with red O'Reilly logo.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781098150969-L.jpg",
+    polygon: [{x:235,y:150}, {x:290,y:150}, {x:290,y:890}, {x:235,y:890}]
+  },
+  {
+    id: "dl-python",
+    title: "Deep Learning with Python",
+    author: "François Chollet",
+    colorDescription: "Red spine with white text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781617294433-L.jpg",
+    polygon: [{x:290,y:150}, {x:348,y:150}, {x:348,y:890}, {x:290,y:890}]
+  },
+  {
+    id: "ml-design-patterns",
+    title: "Machine Learning Design Patterns",
+    author: "Lakshmanan et al.",
+    colorDescription: "White spine with red O'Reilly logo.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781098115784-L.jpg",
+    polygon: [{x:348,y:150}, {x:400,y:150}, {x:400,y:890}, {x:348,y:890}]
+  },
+  {
+    id: "gen-dl",
+    title: "Generative Deep Learning",
+    author: "David Foster",
+    colorDescription: "White spine with red O'Reilly logo.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781492041948-L.jpg",
+    polygon: [{x:400,y:150}, {x:450,y:150}, {x:450,y:890}, {x:400,y:890}]
+  },
+  {
+    id: "gce",
+    title: "Google Compute Engine",
+    author: "Marc Cohen et al.",
+    colorDescription: "Purple spine with bird image and O'Reilly logo.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781449360887-L.jpg",
+    polygon: [{x:450,y:150}, {x:490,y:150}, {x:490,y:890}, {x:450,y:890}]
+  },
+  {
+    id: "serverless",
+    title: "Building Serverless Applications with Google Cloud Run",
+    author: "Wietse Venema",
+    colorDescription: "White spine with red O'Reilly logo.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781492041344-L.jpg",
+    polygon: [{x:490,y:150}, {x:525,y:150}, {x:525,y:890}, {x:490,y:890}]
+  },
+  {
+    id: "numsense",
+    title: "Numsense! Data Science for the Layman",
+    author: "Annalyn Ng & Kenneth Soo",
+    colorDescription: "White spine with blue accent.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9789811110689-L.jpg",
+    polygon: [{x:525,y:150}, {x:555,y:150}, {x:555,y:890}, {x:525,y:890}]
+  },
+  {
+    id: "python-ds-handbook",
+    title: "Python Data Science Handbook",
+    author: "Jake VanderPlas",
+    colorDescription: "Red spine with O'Reilly logo.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781491912058-L.jpg",
+    polygon: [{x:555,y:150}, {x:615,y:150}, {x:615,y:890}, {x:555,y:890}]
+  },
+  {
+    id: "ds-design-manual",
+    title: "The Data Science Design Manual",
+    author: "Steven S. Skiena",
+    colorDescription: "Blue spine with Springer logo.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9783319554433-L.jpg",
+    polygon: [{x:615,y:150}, {x:690,y:150}, {x:690,y:890}, {x:615,y:890}]
+  },
+  {
+    id: "ds-scratch",
+    title: "Data Science from Scratch",
+    author: "Joel Grus",
+    colorDescription: "White spine with red O'Reilly logo.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781492041139-L.jpg",
+    polygon: [{x:690,y:150}, {x:750,y:150}, {x:750,y:890}, {x:690,y:890}]
+  },
+  {
+    id: "build-llm",
+    title: "Build a Large Language Model (From Scratch)",
+    author: "Sebastian Raschka",
+    colorDescription: "Black spine with white text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781633437166-L.jpg",
+    polygon: [{x:750,y:140}, {x:860,y:140}, {x:860,y:900}, {x:750,y:900}]
+  }
+];
+
+const FICTION_BOOKS: BookSpine[] = [
+  {
+    id: "heartstopper-5",
+    title: "Heartstopper Volume 5",
+    author: "Alice Oseman",
+    colorDescription: "Orange spine with large handwritten black text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781444957655-L.jpg",
+    polygon: [{x:35,y:100}, {x:130,y:100}, {x:130,y:900}, {x:35,y:900}]
+  },
+  {
+    id: "xu-bing",
+    title: "Book from the Ground",
+    author: "Xu Bing",
+    colorDescription: "Black spine with white symbols/arrows.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780262027083-L.jpg",
+    polygon: [{x:130,y:120}, {x:160,y:120}, {x:160,y:890}, {x:130,y:890}]
+  },
+  {
+    id: "wilde-boy",
+    title: "Wilde Without the Boy",
+    author: "Gareth Armstrong",
+    colorDescription: "Black spine with white text.",
+    polygon: [{x:160,y:130}, {x:185,y:130}, {x:185,y:890}, {x:160,y:890}]
+  },
+  {
+    id: "mysterious-stranger",
+    title: "The Mysterious Stranger",
+    author: "Mark Twain",
+    colorDescription: "White spine with black text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780486270692-L.jpg",
+    polygon: [{x:185,y:140}, {x:210,y:140}, {x:210,y:890}, {x:185,y:890}]
+  },
+  {
+    id: "child-god",
+    title: "Child of God",
+    author: "Cormac McCarthy",
+    colorDescription: "Red spine with black text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780679747047-L.jpg",
+    polygon: [{x:210,y:145}, {x:255,y:145}, {x:255,y:890}, {x:210,y:890}]
+  },
+  {
+    id: "talk-about-love",
+    title: "What We Talk About When We Talk About Love",
+    author: "Raymond Carver",
+    colorDescription: "Red spine with white text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780679723058-L.jpg",
+    polygon: [{x:255,y:150}, {x:300,y:150}, {x:300,y:890}, {x:255,y:890}]
+  },
+  {
+    id: "end-affair",
+    title: "The End of the Affair",
+    author: "Graham Greene",
+    colorDescription: "Red spine with white text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780099284370-L.jpg",
+    polygon: [{x:300,y:155}, {x:345,y:155}, {x:345,y:890}, {x:300,y:890}]
+  },
+  {
+    id: "velvet-stone",
+    title: "Velvet and Stone",
+    author: "Douglas Maxwell",
+    colorDescription: "Light blue spine.",
+    polygon: [{x:345,y:160}, {x:370,y:160}, {x:370,y:890}, {x:345,y:890}]
+  },
+  {
+    id: "so-young",
+    title: "So Young",
+    author: "Douglas Maxwell",
+    colorDescription: "Blue spine.",
+    polygon: [{x:370,y:160}, {x:395,y:160}, {x:395,y:890}, {x:370,y:890}]
+  },
+  {
+    id: "androids-sheep",
+    title: "Do Androids Dream of Electric Sheep?",
+    author: "Philip K. Dick",
+    colorDescription: "Yellow spine with black text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780345404473-L.jpg",
+    polygon: [{x:395,y:160}, {x:460,y:160}, {x:460,y:890}, {x:395,y:890}]
+  },
+  {
+    id: "novelist-vocation",
+    title: "Novelist as a Vocation",
+    author: "Haruki Murakami",
+    colorDescription: "Black spine with red circle design.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780593318072-L.jpg",
+    polygon: [{x:460,y:155}, {x:520,y:155}, {x:520,y:890}, {x:460,y:890}]
+  },
+  {
+    id: "burning-bright",
+    title: "Burning Bright",
+    author: "John Steinbeck",
+    colorDescription: "White spine with black text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780143039440-L.jpg",
+    polygon: [{x:520,y:150}, {x:565,y:150}, {x:565,y:890}, {x:520,y:890}]
+  },
+  {
+    id: "library-babel",
+    title: "The Library of Babel",
+    author: "Jorge Luis Borges",
+    colorDescription: "Orange spine with geometric pattern.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781567921236-L.jpg",
+    polygon: [{x:565,y:145}, {x:630,y:145}, {x:630,y:890}, {x:565,y:890}]
+  }
+];
+
 export const SHELVES = [
   {
     id: "programming",
     title: "Programming",
     image: PROGRAMMING_IMAGE_SRC,
     books: PROGRAMMING_BOOKS
+  },
+  {
+    id: "ai",
+    title: "Artificial Intelligence",
+    image: AI_IMAGE_SRC,
+    books: AI_BOOKS
   },
   {
     id: "general",
@@ -746,6 +996,12 @@ export const SHELVES = [
     title: "Games & Puzzles",
     image: GAMES_IMAGE_SRC,
     books: GAMES_BOOKS
+  },
+  {
+    id: "fiction",
+    title: "Fiction",
+    image: FICTION_IMAGE_SRC,
+    books: FICTION_BOOKS
   }
 ];
 
