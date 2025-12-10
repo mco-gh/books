@@ -1,0 +1,5 @@
+{
+  "name": "Virtual Bookshelf Viewer",
+  "description": "Interactive static viewer for a bookshelf collection.",
+  "requestFramePermissions": []
+}
