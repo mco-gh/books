@@ -11,6 +11,32 @@ const App: React.FC = () => {
     []
   );
 
+  const statsBox = (
+    <div className="w-full max-w-7xl mx-auto">
+      <div className="bg-gray-800 border border-gray-700 rounded-xl p-8 relative overflow-hidden shadow-2xl">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 blur-3xl rounded-full pointer-events-none -mr-20 -mt-20"></div>
+        
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+          <div className="flex-shrink-0 bg-gray-900 p-6 rounded-2xl border border-gray-700 text-center min-w-[160px]">
+            <Book size={32} className="text-blue-500 mx-auto mb-2" />
+            <span className="text-4xl font-mono font-bold text-white block">{totalBooks}</span>
+            <span className="text-gray-400 text-sm font-medium uppercase tracking-wide">Total Books</span>
+          </div>
+
+          <div className="flex-grow text-center md:text-left">
+            <h3 className="text-xl font-bold text-white mb-3">About this Collection</h3>
+            <p className="text-gray-300 leading-relaxed max-w-3xl">
+              This virtual library is a digitized representation of my physical bookshelves. 
+              Using AI image analysis, each book spine has been mapped to create an interactive experience. 
+              Feel free to browse, hover for quick titles, and click on any book to discover more details 
+              about the programming languages, algorithms, and general non-fiction topics that interest me.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 flex flex-col">
       {/* Header */}
@@ -35,6 +61,9 @@ const App: React.FC = () => {
 
       {/* Main Content */}
       <main className="flex-grow flex flex-col items-center p-4 sm:p-8 space-y-8">
+        {/* Top Info Block */}
+        {statsBox}
+
         <div className="w-full flex flex-col items-center">
             {SHELVES.map((shelf) => (
                 <InteractiveBookshelf 
@@ -46,30 +75,8 @@ const App: React.FC = () => {
             ))}
         </div>
 
-        {/* Global Stats & Info Block */}
-        <div className="w-full max-w-7xl mx-auto mt-8">
-            <div className="bg-gray-800 border border-gray-700 rounded-xl p-8 relative overflow-hidden shadow-2xl">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 blur-3xl rounded-full pointer-events-none -mr-20 -mt-20"></div>
-                
-                <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-                    <div className="flex-shrink-0 bg-gray-900 p-6 rounded-2xl border border-gray-700 text-center min-w-[160px]">
-                         <Book size={32} className="text-blue-500 mx-auto mb-2" />
-                         <span className="text-4xl font-mono font-bold text-white block">{totalBooks}</span>
-                         <span className="text-gray-400 text-sm font-medium uppercase tracking-wide">Total Books</span>
-                    </div>
-
-                    <div className="flex-grow text-center md:text-left">
-                        <h3 className="text-xl font-bold text-white mb-3">About this Collection</h3>
-                        <p className="text-gray-300 leading-relaxed max-w-3xl">
-                            This virtual library is a digitized representation of my physical bookshelves. 
-                            Using AI image analysis, each book spine has been mapped to create an interactive experience. 
-                            Feel free to browse, hover for quick titles, and click on any book to discover more details 
-                            about the programming languages, algorithms, and general non-fiction topics that interest me.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {/* Bottom Info Block */}
+        {statsBox}
       </main>
 
       {/* Footer */}
