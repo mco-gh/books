@@ -1067,7 +1067,7 @@ export const SHELVES = [
   },
   {
     id: "general",
-    title: "General",
+    title: "Non-Fiction",
     image: GENERAL_IMAGE_SRC,
     books: GENERAL_BOOKS
   },
