@@ -5,6 +5,7 @@ const GENERAL_IMAGE_SRC = "https://mco.dev/img/general.jpg";
 const GAMES_IMAGE_SRC = "https://mco.dev/img/games.jpg";
 const AI_IMAGE_SRC = "https://mco.dev/img/ai.jpg";
 const FICTION_IMAGE_SRC = "https://mco.dev/img/fiction.jpg";
+const COMICS_IMAGE_SRC = "https://mco.dev/img/comics.jpg";
 
 const PROGRAMMING_BOOKS: BookSpine[] = [
   {
@@ -936,6 +937,121 @@ const FICTION_BOOKS: BookSpine[] = [
   }
 ];
 
+const COMIC_BOOKS: BookSpine[] = [
+  {
+    id: "monsters",
+    title: "My Favorite Thing is Monsters",
+    author: "Emil Ferris",
+    colorDescription: "Thick spiral bound spine with grid pattern.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781606999592-L.jpg",
+    polygon: [{x:0, y:80}, {x:75, y:110}, {x:215, y:950}, {x:135, y:950}]
+  },
+  {
+    id: "making-comics",
+    title: "Making Comics",
+    author: "Scott McCloud",
+    colorDescription: "Orange spine with white text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780060780944-L.jpg",
+    polygon: [{x:80, y:115}, {x:130, y:125}, {x:265, y:950}, {x:215, y:950}]
+  },
+  {
+    id: "vincent",
+    title: "Vincent",
+    author: "Barbara Stok",
+    colorDescription: "Blue spine with white text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781906838684-L.jpg",
+    polygon: [{x:135, y:175}, {x:175, y:185}, {x:318, y:950}, {x:270, y:950}]
+  },
+  {
+    id: "blurry",
+    title: "Blurry",
+    author: "Dash Shaw",
+    colorDescription: "Green spine with yellow/black text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781681374598-L.jpg",
+    polygon: [{x:180, y:190}, {x:295, y:200}, {x:405, y:950}, {x:322, y:950}]
+  },
+  {
+    id: "stats-cartoon",
+    title: "The Cartoon Guide to Statistics",
+    author: "Gonick & Smith",
+    colorDescription: "Pink/Purple spine with white text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780062731029-L.jpg",
+    polygon: [{x:300, y:200}, {x:350, y:200}, {x:450, y:950}, {x:410, y:950}]
+  },
+  {
+    id: "chem-cartoon",
+    title: "The Cartoon Guide to Chemistry",
+    author: "Gonick & Criddle",
+    colorDescription: "Blue spine with white text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780060936778-L.jpg",
+    polygon: [{x:355, y:200}, {x:405, y:200}, {x:490, y:950}, {x:455, y:950}]
+  },
+  {
+    id: "genetics-cartoon",
+    title: "The Cartoon Guide to Genetics",
+    author: "Gonick & Wheelis",
+    colorDescription: "Red spine with white text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780062730985-L.jpg",
+    polygon: [{x:410, y:200}, {x:460, y:200}, {x:530, y:950}, {x:495, y:950}]
+  },
+  {
+    id: "logicomix",
+    title: "Logicomix",
+    author: "Doxiadis et al.",
+    colorDescription: "Black spine with white large text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781596914520-L.jpg",
+    polygon: [{x:465, y:175}, {x:520, y:175}, {x:580, y:950}, {x:535, y:950}]
+  },
+  {
+    id: "economix",
+    title: "Economix",
+    author: "Goodwin & Burr",
+    colorDescription: "White spine with red/black text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780810988392-L.jpg",
+    polygon: [{x:525, y:180}, {x:580, y:180}, {x:630, y:950}, {x:585, y:950}]
+  },
+  {
+    id: "killing-dying",
+    title: "Killing and Dying",
+    author: "Adrian Tomine",
+    colorDescription: "Pinkish spine with black text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9781770462090-L.jpg",
+    polygon: [{x:585, y:190}, {x:620, y:190}, {x:665, y:950}, {x:635, y:950}]
+  },
+  {
+    id: "beats-history",
+    title: "The Beats: A Graphic History",
+    author: "Harvey Pekar et al.",
+    colorDescription: "Black spine with yellow text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780809094863-L.jpg",
+    polygon: [{x:625, y:190}, {x:665, y:190}, {x:710, y:950}, {x:670, y:950}]
+  },
+  {
+    id: "fun-home",
+    title: "Fun Home",
+    author: "Alison Bechdel",
+    colorDescription: "Green spine with white text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780618872352-L.jpg",
+    polygon: [{x:670, y:200}, {x:725, y:200}, {x:770, y:950}, {x:715, y:950}]
+  },
+  {
+    id: "treasure-island",
+    title: "Treasure Island",
+    author: "Stevenson/Hamilton",
+    colorDescription: "Black thin spine with red text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780142404652-L.jpg",
+    polygon: [{x:730, y:200}, {x:760, y:200}, {x:805, y:950}, {x:775, y:950}]
+  },
+  {
+    id: "big-sur",
+    title: "Big Sur",
+    author: "Jack Kerouac",
+    colorDescription: "White spine with gold text.",
+    coverImage: "https://covers.openlibrary.org/b/isbn/9780143118558-L.jpg",
+    polygon: [{x:765, y:200}, {x:810, y:200}, {x:860, y:950}, {x:810, y:950}]
+  }
+];
+
 export const SHELVES = [
   {
     id: "programming",
@@ -966,6 +1082,12 @@ export const SHELVES = [
     title: "Fiction",
     image: FICTION_IMAGE_SRC,
     books: FICTION_BOOKS
+  },
+  {
+    id: "graphic-novels",
+    title: "Graphic Novels",
+    image: COMICS_IMAGE_SRC,
+    books: COMIC_BOOKS
   }
 ];
 
