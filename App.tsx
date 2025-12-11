@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import InteractiveBookshelf from './components/InteractiveBookshelf';
 import { SHELVES } from './data/staticData';
-import { Library, X, Book } from 'lucide-react';
+import { Library, X, Book, ArrowDown } from 'lucide-react';
 
 const App: React.FC = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
@@ -10,6 +10,13 @@ const App: React.FC = () => {
     SHELVES.reduce((acc, shelf) => acc + shelf.books.length, 0),
     []
   );
+
+  const scrollToShelf = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const statsBox = (
     <div className="w-full max-w-7xl mx-auto">
@@ -29,8 +36,24 @@ const App: React.FC = () => {
               This virtual library is a digitized representation of my physical bookshelves. 
               Using AI image analysis, each book spine has been mapped to create an interactive experience. 
               Feel free to browse, hover for quick titles, and click on any book to discover more details 
-              about the programming languages, algorithms, and general non-fiction topics that interest me.
+              about the Programming, Artificial Intelligence, Non-Fiction, Games & Puzzles, Fiction, and Graphic Novels collections that interest me.
             </p>
+            
+            <div className="mt-6">
+              <span className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">Quick Jump</span>
+              <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                {SHELVES.map(shelf => (
+                  <button
+                    key={shelf.id}
+                    onClick={() => scrollToShelf(shelf.id)}
+                    className="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-700/50 hover:bg-blue-600/20 border border-gray-600 hover:border-blue-500/50 rounded-full text-xs font-medium text-gray-300 hover:text-blue-200 transition-all duration-200"
+                  >
+                    {shelf.title}
+                    <ArrowDown size={10} className="opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-y-[1px]" />
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -68,6 +91,7 @@ const App: React.FC = () => {
             {SHELVES.map((shelf) => (
                 <InteractiveBookshelf 
                     key={shelf.id}
+                    id={shelf.id}
                     title={shelf.title}
                     imageSrc={shelf.image} 
                     books={shelf.books} 

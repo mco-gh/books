@@ -6,9 +6,10 @@ interface InteractiveBookshelfProps {
   title: string;
   imageSrc: string;
   books: BookSpine[];
+  id?: string;
 }
 
-const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ title, imageSrc, books }) => {
+const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ title, imageSrc, books, id }) => {
   const [hoveredBookId, setHoveredBookId] = useState<string | null>(null);
   const [selectedBookId, setSelectedBookId] = useState<string | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -56,7 +57,7 @@ const InteractiveBookshelf: React.FC<InteractiveBookshelfProps> = ({ title, imag
   };
 
   return (
-    <div className="flex flex-col items-center w-full max-w-[57.6rem] mx-auto p-4 animate-fade-in relative mb-12 last:mb-0">
+    <div id={id} className="flex flex-col items-center w-full max-w-[57.6rem] mx-auto p-4 animate-fade-in relative mb-12 last:mb-0">
       
       {/* Floating Tooltip (Hover) */}
       {hoveredBook && !selectedBook && (
