@@ -36,7 +36,7 @@ const App: React.FC = () => {
               This virtual library is a digitized representation of my physical bookshelves. 
               Using AI image analysis, each book spine has been mapped to create an interactive experience. 
               Feel free to browse, hover for quick titles, and click on any book to discover more details 
-              about the Programming, Artificial Intelligence, Non-Fiction, Games & Puzzles, Fiction, and Graphic Novels collections that interest me.
+              about the subjects that interest me.
             </p>
             
             <div className="mt-6">
@@ -138,7 +138,7 @@ const App: React.FC = () => {
                   Welcome to this interactive experiment! This app transforms a standard photo of my bookshelf into a queryable, digital library.
                 </p>
                 <p>
-                  I built this using the <strong>Gemini 2.5 Flash API</strong> to analyze the image and generate precise vector coordinates for every book spine, allowing for the interactions you see here.
+                  I built this using the <strong>Gemini 3.0 Pro Preview API</strong> to analyze the image and generate precise vector coordinates for every book spine, allowing for the interactions you see here.
                 </p>
                 <p>
                   Check out my blog at <a href="https://mco.dev" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 hover:underline">mco.dev</a>.
